@@ -1,0 +1,19 @@
+.word
+{
+	font-size: 45px;	
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+.word table
+{
+	margin: auto;
+	margin-top: 250px;
+}
+
+.empresa
+{
+	float: right;
+    font-family: 'Hammersmith One', sans-serif;
+	font-size: 25px;
+	color: #ececec;*/
+}
