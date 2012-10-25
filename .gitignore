@@ -1,5 +1,7 @@
-ompiled source #
-###################
+
+# Compiled source #
+################
+
 *.com
 *.class
 *.dll
@@ -27,6 +29,7 @@ ompiled source #
 *.sql
 *.sqlite
 *.table
+*.db
 
 # OS generated files #
 ######################
@@ -35,10 +38,16 @@ ompiled source #
 ._*
 .Spotlight-V100
 .Trashes
-Icon?
 ehthumbs.db
 Thumbs.db
 
 # Editor stuff #
-###############
+################
 .idea
+*.sublime-project
+*.sublime-workspace
+
+# Framework stuff #
+###################
+
+
