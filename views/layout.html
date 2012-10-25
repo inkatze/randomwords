@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]><html class="ie ie6 ie-lte9 ie-lte8 ie-lte7 no-js" lang="{{=T.accepted_language or 'en'}}"> <![endif]-->
 <!--[if IE 7]><html class="ie ie7 ie-lte9 ie-lte8 ie-lte7 no-js" lang="{{=T.accepted_language or 'en'}}"> <![endif]-->
 <!--[if IE 8]><html class="ie ie8 ie-lte9 ie-lte8 no-js" lang="{{=T.accepted_language or 'en'}}"> <![endif]-->
@@ -7,25 +6,20 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{=T.accepted_language or 'en'}}"> <!--<![endif]-->
 <head>
   <meta charset="utf-8" />
-  <!-- www.phpied.com/conditional-comments-block-downloads/ -->
-  <!-- Always force latest IE rendering engine
-	   (even in intranet) & Chrome Frame
-	   Remove this if you use the .htaccess -->
   <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge{{=not request.is_local and ',chrome=1' or ''}}">
   <![endif]-->
   
-  <title>{{=response.title or request.application}}</title>
+  <title>Generador de palabras</title>
+  
+  <meta name="Generador de palabras" content="Generador de palabras">
+  <meta name="description" content="Generador automático de palabras aleatoreas en español">
   
   <link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
   
   <!-- http://dev.w3.org/html5/markup/meta.name.html -->
   <meta name="application-name" content="{{=request.application}}" />
   
-  <!-- Speaking of Google, don't forget to set your site up:
-	   http://google.com/webmasters -->
-  <meta name="google-site-verification" content="" />
-
   <link rel="shortcut icon" href="{{=URL('static','favicon/favicon.ico')}}" type="image/x-icon">
   <link rel="apple-touch-icon" href="{{=URL('static','favicon/favicon.png')}}">
 
@@ -54,7 +48,6 @@
   response.files.append(URL('static','css/amazium/layout.css'))
   response.files.append(URL('static','css/amazium/smoothscroll.js'))
   
-  response.files.append(URL('static','css/skeleton.css'))
   response.files.append(URL('static','css/web2py.css'))
   if response.menu:
      response.files.append(URL('static','css/superfish.css'))
