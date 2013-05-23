@@ -5,7 +5,7 @@ def index():
 
 def random():
     row = db(db.word).select(
-    	db.word.word, orderby='<random>', limitby=(0,1)).first()
+        db.word.word, orderby='<random>', limitby=(0,1)).first()
     return row.word
 
 
