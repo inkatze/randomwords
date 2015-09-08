@@ -1,0 +1,21 @@
+@font-face
+{
+    font-family: 'Gotham-Book';
+    src: url(../fonts/gotham-book.ttf);
+}
+
+body
+{
+    font-family: 'Gotham-Book';
+}
+
+.word
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 42px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: -30px;
+}

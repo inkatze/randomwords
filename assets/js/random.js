@@ -1,6 +1,6 @@
 var dictionary;
 $.ajax({
-    url: "spanish.json",
+    url: "assets/js/spanish.json",
     dataType: "json",
     isLocal: true,
     crossDomain: true,
