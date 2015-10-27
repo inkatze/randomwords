@@ -16,11 +16,9 @@ function getRandomWord() {
     return rand;
 }
 
-function changeWord() {
+(function changeWord() {
     $("#word").hide(0, function() {
         $(this).html(getRandomWord());
     }).fadeIn(600);
-    setTimeout("changeWord()", 6000);
-}
-
-changeWord();
+    setTimeout(changeWord, 6000);
+})();
